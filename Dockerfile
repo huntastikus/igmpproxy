@@ -13,7 +13,7 @@ CMD mkdir /tcpdump
 
 WORKDIR /etc/igmpproxy
 
-COPY igmpproxy.conf.template /templates/igmpproxy.conf.template
+COPY igmpproxy.conf /templates/igmpproxy.conf.template
 COPY start.sh /start.sh
 RUN chmod +x /start.sh
 
