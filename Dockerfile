@@ -9,7 +9,7 @@ RUN apk update && \
     net-tools \
     tcpdump
 
-CMD mkdir /tcpdump
+RUN mkdir /tcpdump
 
 WORKDIR /etc/igmpproxy
 
