@@ -9,4 +9,4 @@ if [ ! -f /etc/igmpproxy/igmpproxy.conf ]; then
 fi
 
 echo "[$(date)] Starting igmpproxy service"
-exec igmpproxy -d 5 igmpproxy.conf
+exec igmpproxy /etc/igmpproxy/igmpproxy.conf
